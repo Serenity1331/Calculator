@@ -24,7 +24,7 @@ function addListeners() {
     for (let operation of operations) {
         operation.addEventListener('click', function() {
     
-            let value = this.innerHTML;
+            let value = this.children[0].innerHTML;
             let str = display.innerHTML.trim();
             let lastSymbolShown = str[str.length-1];
     
@@ -37,7 +37,7 @@ function addListeners() {
                         display.innerHTML = math.evaluate(display.innerHTML);
                     } catch(err) {
                         if (err) {
-                            console.log('Error! Noice!')
+                            console.log('Error!');
                             display.innerHTML = '0';
                         } else {
                             display.innerHTML = math.evaluate(display.innerHTML);

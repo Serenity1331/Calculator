@@ -121,6 +121,14 @@ body {
     font-size: 25px;
 }
 
+.minus-sign {
+    margin-bottom: 5px;
+}
+
+.multiply-sign {
+    margin-top: 5px;
+}
+
 #clear {
     background: #171636;;
 }
